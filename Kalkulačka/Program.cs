@@ -4,46 +4,68 @@ class Calculator {
 
     public static void Main (string[] args) {
 
-        Console.WriteLine("Zadej 2 čísla: ");
+        Console.WriteLine("Zadej 1. číslo: ");
         int a = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("Zadej 2. číslo: ");
         int b = Convert.ToInt32(Console.ReadLine());
 
         Operator operace = new Operator(a, b);
 
+        Console.WriteLine("Zadej operaci: ");
+        string operaceStr = "";
+        try {
+            operaceStr = Console.ReadLine();
+        } catch (Exception e) {
+            Console.WriteLine(e.Message);
+        }
+
+        if (operaceStr == "+") {
+            Console.WriteLine(operace.Add());
+        } else if (operaceStr == "-") {
+            Console.WriteLine(operace.Subtract());
+        } else if (operaceStr == "*") {
+            Console.WriteLine(operace.Multiply());
+        } else if (operaceStr == "/") {
+            Console.WriteLine(operace.Divide());
+        } else if (operaceStr == "%") {
+            Console.WriteLine(operace.Modulo());
+        } else if (operaceStr == "^") {
+            Console.WriteLine(operace.Power());
+        }
     }
 }
 
-class Operator(float a, float b) {
+class Operator {
 
-    private float a;
-    private float b;
+    private int a;
+    private int b;
 
-    public void ConstructorBuilder (float a, float b) {
+    public Operator (int a, int b) {
         this.a = a;
         this.b = b;
     }
 
-    public static int Add() {
+    public int Add() {
         return a + b;
     }
 
-    public static int Subtract(int a, int b) {
+    public int Subtract() {
         return a - b;
     }
 
-    public static int Multiply(int a, int b) {
+    public int Multiply() {
         return a * b;
     }
 
-    public static int Divide(int a, int b) {
+    public int Divide() {
         return a / b;
     }
 
-    public static int Modulo(int a, int b) {
+    public int Modulo() {
         return a % b;
     }
 
-    public static int Power(int a, int b) {
+    public int Power() {
         return (int)Math.Pow(a, b);
     }
 
