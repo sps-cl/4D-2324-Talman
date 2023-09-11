@@ -1,0 +1,15 @@
+E:\Github\4D-prg-2324-Talman\Kalkulačka\bin\Debug\net7.0\Kalkulačka.exe
+E:\Github\4D-prg-2324-Talman\Kalkulačka\bin\Debug\net7.0\Kalkulačka.deps.json
+E:\Github\4D-prg-2324-Talman\Kalkulačka\bin\Debug\net7.0\Kalkulačka.runtimeconfig.json
+E:\Github\4D-prg-2324-Talman\Kalkulačka\bin\Debug\net7.0\Kalkulačka.dll
+E:\Github\4D-prg-2324-Talman\Kalkulačka\bin\Debug\net7.0\Kalkulačka.pdb
+E:\Github\4D-prg-2324-Talman\Kalkulačka\obj\Debug\net7.0\Kalkulačka.csproj.AssemblyReference.cache
+E:\Github\4D-prg-2324-Talman\Kalkulačka\obj\Debug\net7.0\Kalkulačka.GeneratedMSBuildEditorConfig.editorconfig
+E:\Github\4D-prg-2324-Talman\Kalkulačka\obj\Debug\net7.0\Kalkulačka.AssemblyInfoInputs.cache
+E:\Github\4D-prg-2324-Talman\Kalkulačka\obj\Debug\net7.0\Kalkulačka.AssemblyInfo.cs
+E:\Github\4D-prg-2324-Talman\Kalkulačka\obj\Debug\net7.0\Kalkulačka.csproj.CoreCompileInputs.cache
+E:\Github\4D-prg-2324-Talman\Kalkulačka\obj\Debug\net7.0\Kalkulačka.dll
+E:\Github\4D-prg-2324-Talman\Kalkulačka\obj\Debug\net7.0\refint\Kalkulačka.dll
+E:\Github\4D-prg-2324-Talman\Kalkulačka\obj\Debug\net7.0\Kalkulačka.pdb
+E:\Github\4D-prg-2324-Talman\Kalkulačka\obj\Debug\net7.0\Kalkulačka.genruntimeconfig.cache
+E:\Github\4D-prg-2324-Talman\Kalkulačka\obj\Debug\net7.0\ref\Kalkulačka.dll
