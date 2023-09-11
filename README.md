@@ -2,7 +2,7 @@
 
 Jakub "Blodyx" Talman
 
-# Jak používat git v **cmd**?
+# Jak používat git v cmd?
     - git add *thing to add*
     - git commit -m "Commit message"
     - git push
