@@ -13,3 +13,17 @@ E:\Github\4D-prg-2324-Talman\Kalkulačka\obj\Debug\net7.0\refint\Kalkulačka.dll
 E:\Github\4D-prg-2324-Talman\Kalkulačka\obj\Debug\net7.0\Kalkulačka.pdb
 E:\Github\4D-prg-2324-Talman\Kalkulačka\obj\Debug\net7.0\Kalkulačka.genruntimeconfig.cache
 E:\Github\4D-prg-2324-Talman\Kalkulačka\obj\Debug\net7.0\ref\Kalkulačka.dll
+C:\Users\kjube\Documents\GitHub\4D-prg-2324-Talman\Kalkulačka\bin\Debug\net7.0\Kalkulačka.exe
+C:\Users\kjube\Documents\GitHub\4D-prg-2324-Talman\Kalkulačka\bin\Debug\net7.0\Kalkulačka.deps.json
+C:\Users\kjube\Documents\GitHub\4D-prg-2324-Talman\Kalkulačka\bin\Debug\net7.0\Kalkulačka.runtimeconfig.json
+C:\Users\kjube\Documents\GitHub\4D-prg-2324-Talman\Kalkulačka\bin\Debug\net7.0\Kalkulačka.dll
+C:\Users\kjube\Documents\GitHub\4D-prg-2324-Talman\Kalkulačka\bin\Debug\net7.0\Kalkulačka.pdb
+C:\Users\kjube\Documents\GitHub\4D-prg-2324-Talman\Kalkulačka\obj\Debug\net7.0\Kalkulačka.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kjube\Documents\GitHub\4D-prg-2324-Talman\Kalkulačka\obj\Debug\net7.0\Kalkulačka.AssemblyInfoInputs.cache
+C:\Users\kjube\Documents\GitHub\4D-prg-2324-Talman\Kalkulačka\obj\Debug\net7.0\Kalkulačka.AssemblyInfo.cs
+C:\Users\kjube\Documents\GitHub\4D-prg-2324-Talman\Kalkulačka\obj\Debug\net7.0\Kalkulačka.csproj.CoreCompileInputs.cache
+C:\Users\kjube\Documents\GitHub\4D-prg-2324-Talman\Kalkulačka\obj\Debug\net7.0\Kalkulačka.dll
+C:\Users\kjube\Documents\GitHub\4D-prg-2324-Talman\Kalkulačka\obj\Debug\net7.0\refint\Kalkulačka.dll
+C:\Users\kjube\Documents\GitHub\4D-prg-2324-Talman\Kalkulačka\obj\Debug\net7.0\Kalkulačka.pdb
+C:\Users\kjube\Documents\GitHub\4D-prg-2324-Talman\Kalkulačka\obj\Debug\net7.0\Kalkulačka.genruntimeconfig.cache
+C:\Users\kjube\Documents\GitHub\4D-prg-2324-Talman\Kalkulačka\obj\Debug\net7.0\ref\Kalkulačka.dll

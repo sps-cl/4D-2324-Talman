@@ -8,26 +8,24 @@
     "net7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Kuba\\.nuget\\packages\\": {}
+    "C:\\Users\\kjube\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Github\\4D-prg-2324-Talman\\Kalkulačka\\Kalkulačka.csproj",
+      "projectUniqueName": "C:\\Users\\kjube\\Documents\\GitHub\\4D-prg-2324-Talman\\Kalkulačka\\Kalkulačka.csproj",
       "projectName": "Kalkulačka",
-      "projectPath": "E:\\Github\\4D-prg-2324-Talman\\Kalkulačka\\Kalkulačka.csproj",
-      "packagesPath": "C:\\Users\\Kuba\\.nuget\\packages\\",
-      "outputPath": "E:\\Github\\4D-prg-2324-Talman\\Kalkulačka\\obj\\",
+      "projectPath": "C:\\Users\\kjube\\Documents\\GitHub\\4D-prg-2324-Talman\\Kalkulačka\\Kalkulačka.csproj",
+      "packagesPath": "C:\\Users\\kjube\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\kjube\\Documents\\GitHub\\4D-prg-2324-Talman\\Kalkulačka\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Kuba\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\kjube\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -61,7 +59,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }
