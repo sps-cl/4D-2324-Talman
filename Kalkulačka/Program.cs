@@ -1,72 +1,67 @@
 ﻿using System;
 
-class Calculator {
 
-    public static void Main (string[] args) {
+public interface IOperation {
+    double Execute(double a, double b);
+}
 
-        Console.WriteLine("Zadej 1. číslo: ");
-        int a = Convert.ToInt32(Console.ReadLine());
-        Console.WriteLine("Zadej 2. číslo: ");
-        int b = Convert.ToInt32(Console.ReadLine());
-
-        Operator operace = new Operator(a, b);
-
-        Console.WriteLine("Zadej operaci: ");
-        string operaceStr = "";
-        try {
-            operaceStr = Console.ReadLine();
-        } catch (Exception e) {
-            Console.WriteLine(e.Message);
-        }
-
-        if (operaceStr == "+") {
-            Console.WriteLine(operace.Add());
-        } else if (operaceStr == "-") {
-            Console.WriteLine(operace.Subtract());
-        } else if (operaceStr == "*") {
-            Console.WriteLine(operace.Multiply());
-        } else if (operaceStr == "/") {
-            Console.WriteLine(operace.Divide());
-        } else if (operaceStr == "%") {
-            Console.WriteLine(operace.Modulo());
-        } else if (operaceStr == "^") {
-            Console.WriteLine(operace.Power());
-        }
+public class OpAdd : IOperation {
+    public double Execute(double a, double b) {
+        return a + b;
     }
 }
 
-class Operator {
-
-    private int a;
-    private int b;
-
-    public Operator (int a, int b) {
-        this.a = a;
-        this.b = b;
-    }
-
-    public int Add() {
-        return a + b;
-    }
-
-    public int Subtract() {
+public class OpSub : IOperation {
+    public double Execute(double a, double b) {
         return a - b;
     }
+}
 
-    public int Multiply() {
-        return a * b;
+public class OpMagic : IOperation {
+    public double Execute(double a, double b) {
+        return a * b / 2;
+    }
+}
+
+
+public class CalculatorContext {
+    public IOperation operation;
+
+    public CalculatorContext(IOperation operation) {
+        this.operation = operation;
     }
 
-    public int Divide() {
-        return a / b;
+    public double ExecuteOperation(double a, double b) {
+        return operation.Execute(a, b);
     }
+}
 
-    public int Modulo() {
-        return a % b;
+
+class CalculatorApp {
+    static void Main() {
+
+        IOperation addOperation = new OpAdd();
+        IOperation subOperation = new OpSub();
+        IOperation magicOperation = new OpMagic();
+        
+        CalculatorContext calculator = new CalculatorContext(addOperation);
+
+        Console.WriteLine("Zadej prvni číslo: ");
+        double a = Convert.ToDouble(Console.ReadLine());
+        Console.WriteLine("Zadej druhé číslo: ");
+        double b = Convert.ToDouble(Console.ReadLine());
+
+        double result = calculator.ExecuteOperation(a, b);
+        Console.WriteLine("Výsledek sčítání: " + result);
+
+        calculator.operation = subOperation;
+
+        result = calculator.ExecuteOperation(a, b);
+        Console.WriteLine("Výsledek odčítání: " + result);
+
+        calculator.operation = magicOperation;
+
+        result = calculator.ExecuteOperation(a, b);
+        Console.WriteLine("Výsledek magické operace: " + result);
     }
-
-    public int Power() {
-        return (int)Math.Pow(a, b);
-    }
-
 }
