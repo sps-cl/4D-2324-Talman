@@ -4,7 +4,7 @@ namespace LibraryApp {
 
     internal abstract class LibraryItem<T> {
 
-        private int id { get;}
+        private int id;
         public string Title {get;}
         public bool isAvailable {get;set;}
 
@@ -12,6 +12,10 @@ namespace LibraryApp {
             this.id = id;
             this.Title = Title;
             this.isAvailable = isAvailable;
+        }
+
+        public int getId() {
+            return id;
         }
 
         public abstract void DisplayInfo();
@@ -41,9 +45,24 @@ namespace LibraryApp {
         }
     }
 
+    internal class Shelf {
+        List<Book> bookShelf = new List<Book>();
+        List<DVD> dvdShelf = new List<DVD>();
+
+        public void addItem (ref LibraryItem item) {
+            if (item is Book) {
+                bookShelf.Add((Book)item);
+            } else if (item is DVD) {
+                dvdShelf.Add((DVD)item);
+            }
+        }
+    }
+
 
     internal class Library {
 
+        
+        
     }
 }
 
