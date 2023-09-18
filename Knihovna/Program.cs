@@ -2,7 +2,7 @@
 
 namespace LibraryApp {
 
-    internal abstract class LibraryItem <T> {
+    internal abstract class LibraryItem<T> {
 
         private int id { get;}
         public string Title {get;}
@@ -39,6 +39,11 @@ namespace LibraryApp {
         public override void DisplayInfo() {
             Console.WriteLine($"Director: {Director}, Title: {Title}");
         }
+    }
+
+
+    internal class Library {
+
     }
 }
 
