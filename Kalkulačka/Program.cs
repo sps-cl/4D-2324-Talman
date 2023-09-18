@@ -1,7 +1,7 @@
 ﻿using System;
 
 
-public interface IOperation {
+internal interface IOperation {
     double Execute(double a, double b);
 }
 
