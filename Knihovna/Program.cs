@@ -1,68 +1,32 @@
-﻿using System;
+using System;
+using LibraryApp;
 
-namespace LibraryApp {
-
-    internal abstract class LibraryItem<T> {
-
-        private int id;
-        public string Title {get;}
-        public bool isAvailable {get;set;}
-
-        public LibraryItem(int id, string Title) {
-            this.id = id;
-            this.Title = Title;
-            this.isAvailable = isAvailable;
-        }
-
-        public int getId() {
-            return id;
-        }
-
-        public abstract void DisplayInfo();
-    }
-
-    internal class Book : LibraryItem<Book> {
-        public string Author {get;}
-
-        public Book(int id, string Title, string Author) : base(id, Title) {
-            this.Author = Author;
-        }
-
-        public override void DisplayInfo() {
-            Console.WriteLine($"Autor: {Author}, Title: {Title}");
-        }
-    }
-
-    internal class DVD : LibraryItem<DVD> {
-        public string Director {get;}
-
-        public DVD (string Director, int id, string Title) : base(id, Title) {
-            this.Director = Director;
-        }
-
-        public override void DisplayInfo() {
-            Console.WriteLine($"Director: {Director}, Title: {Title}");
-        }
-    }
-
-    internal class Shelf {
-        List<Book> bookShelf = new List<Book>();
-        List<DVD> dvdShelf = new List<DVD>();
-
-        public void addItem (ref LibraryItem item) {
-            if (item is Book) {
-                bookShelf.Add((Book)item);
-            } else if (item is DVD) {
-                dvdShelf.Add((DVD)item);
-            }
-        }
-    }
-
-
-    internal class Library {
-
+public class Program {
+    public static void Main(string[] args) {
         
-        
+        Book book1 = new Book(1, "The Hobbit", "J.R.Tolkien");
+        Book book2 = new Book(2, "The Lord of the Rings", "J.R.Tolkien");
+        Book book3 = new Book(3, "The Harry Potter", "J.K.Rowling");
+
+        DVD dvd1 = new DVD(1, "Shrek", "Andrew Adamson");
+        DVD dvd2 = new DVD(2, "Your Name", "Makoto Shinkai");
+        DVD dvd3 = new DVD(3, "Weathering with you", "Makoto Shinkai");
+
+        Library library = new Library();
+
+        library.AddBook(book1);
+        library.AddBook(book2);
+        library.AddBook(book3);
+
+        library.AddDVD(dvd1);
+        library.AddDVD(dvd2);
+        library.AddDVD(dvd3);
+
+        library.removeBookById(3);
+        library.removeDVDById(1);
+
+        library.DisplayBooks();
+        library.DisplayDVDs();
+
     }
 }
-
