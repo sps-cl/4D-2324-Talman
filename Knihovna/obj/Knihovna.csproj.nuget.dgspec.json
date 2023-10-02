@@ -1,25 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\kjube\\Documents\\GitHub\\4D-prg-2324-Talman\\Knihovna\\Knihovna.csproj": {}
+    "R:\\GitHub\\4D-prg-2324-Talman\\Knihovna\\Knihovna.csproj": {}
   },
   "projects": {
-    "C:\\Users\\kjube\\Documents\\GitHub\\4D-prg-2324-Talman\\Knihovna\\Knihovna.csproj": {
+    "R:\\GitHub\\4D-prg-2324-Talman\\Knihovna\\Knihovna.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kjube\\Documents\\GitHub\\4D-prg-2324-Talman\\Knihovna\\Knihovna.csproj",
+        "projectUniqueName": "R:\\GitHub\\4D-prg-2324-Talman\\Knihovna\\Knihovna.csproj",
         "projectName": "Knihovna",
-        "projectPath": "C:\\Users\\kjube\\Documents\\GitHub\\4D-prg-2324-Talman\\Knihovna\\Knihovna.csproj",
-        "packagesPath": "C:\\Users\\kjube\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kjube\\Documents\\GitHub\\4D-prg-2324-Talman\\Knihovna\\obj\\",
+        "projectPath": "R:\\GitHub\\4D-prg-2324-Talman\\Knihovna\\Knihovna.csproj",
+        "packagesPath": "C:\\Users\\jakub.talman\\.nuget\\packages\\",
+        "outputPath": "R:\\GitHub\\4D-prg-2324-Talman\\Knihovna\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\kjube\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\jakub.talman\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {

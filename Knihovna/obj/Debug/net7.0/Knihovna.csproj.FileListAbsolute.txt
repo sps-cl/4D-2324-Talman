@@ -12,3 +12,17 @@ C:\Users\kjube\Documents\GitHub\4D-prg-2324-Talman\Knihovna\obj\Debug\net7.0\ref
 C:\Users\kjube\Documents\GitHub\4D-prg-2324-Talman\Knihovna\obj\Debug\net7.0\Knihovna.pdb
 C:\Users\kjube\Documents\GitHub\4D-prg-2324-Talman\Knihovna\obj\Debug\net7.0\Knihovna.genruntimeconfig.cache
 C:\Users\kjube\Documents\GitHub\4D-prg-2324-Talman\Knihovna\obj\Debug\net7.0\ref\Knihovna.dll
+R:\GitHub\4D-prg-2324-Talman\Knihovna\bin\Debug\net7.0\Knihovna.exe
+R:\GitHub\4D-prg-2324-Talman\Knihovna\bin\Debug\net7.0\Knihovna.deps.json
+R:\GitHub\4D-prg-2324-Talman\Knihovna\bin\Debug\net7.0\Knihovna.runtimeconfig.json
+R:\GitHub\4D-prg-2324-Talman\Knihovna\bin\Debug\net7.0\Knihovna.dll
+R:\GitHub\4D-prg-2324-Talman\Knihovna\bin\Debug\net7.0\Knihovna.pdb
+R:\GitHub\4D-prg-2324-Talman\Knihovna\obj\Debug\net7.0\Knihovna.GeneratedMSBuildEditorConfig.editorconfig
+R:\GitHub\4D-prg-2324-Talman\Knihovna\obj\Debug\net7.0\Knihovna.AssemblyInfoInputs.cache
+R:\GitHub\4D-prg-2324-Talman\Knihovna\obj\Debug\net7.0\Knihovna.AssemblyInfo.cs
+R:\GitHub\4D-prg-2324-Talman\Knihovna\obj\Debug\net7.0\Knihovna.csproj.CoreCompileInputs.cache
+R:\GitHub\4D-prg-2324-Talman\Knihovna\obj\Debug\net7.0\Knihovna.dll
+R:\GitHub\4D-prg-2324-Talman\Knihovna\obj\Debug\net7.0\refint\Knihovna.dll
+R:\GitHub\4D-prg-2324-Talman\Knihovna\obj\Debug\net7.0\Knihovna.pdb
+R:\GitHub\4D-prg-2324-Talman\Knihovna\obj\Debug\net7.0\Knihovna.genruntimeconfig.cache
+R:\GitHub\4D-prg-2324-Talman\Knihovna\obj\Debug\net7.0\ref\Knihovna.dll

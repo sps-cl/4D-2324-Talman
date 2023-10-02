@@ -12,21 +12,22 @@ public class Program {
         DVD dvd2 = new DVD(2, "Your Name", "Makoto Shinkai");
         DVD dvd3 = new DVD(3, "Weathering with you", "Makoto Shinkai");
 
-        Library library = new Library();
+        Library <Book> BookStore = new Library<Book>();
+        Library <DVD> DVDStore = new Library<DVD>();
 
-        library.AddBook(book1);
-        library.AddBook(book2);
-        library.AddBook(book3);
+        BookStore.AddItem(book1);
+        BookStore.AddItem(book2);
+        BookStore.AddItem(book3);
 
-        library.AddDVD(dvd1);
-        library.AddDVD(dvd2);
-        library.AddDVD(dvd3);
+        DVDStore.AddItem(dvd1);
+        DVDStore.AddItem(dvd2);
+        DVDStore.AddItem(dvd3);
 
-        library.removeBookById(3);
-        library.removeDVDById(1);
+        BookStore.removeItemById(3);
+        DVDStore.removeItemById(1);
 
-        library.DisplayBooks();
-        library.DisplayDVDs();
+        BookStore.DisplayItems();
+        DVDStore.DisplayItems();
 
     }
 }

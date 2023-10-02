@@ -47,45 +47,25 @@ namespace LibraryApp {
         }
     }
 
-    internal class Library {
+    internal class Library<T> where T : LibraryItem<T> {
 
-        List<Book> bookShelf = new List<Book>();
-        List<DVD> dvdShelf = new List<DVD>();
+        List<T> shelf = new List<T>();
 
-
-        public void AddBook(Book book) {
-            bookShelf.Add(book);
+        public void AddItem(T item) {
+            shelf.Add(item);
         }
 
-        public void removeBookById(int id) {
-            for (int i = 0; i < bookShelf.Count; i++) {
-                if (bookShelf[i].getId() == id) {
-                    bookShelf.RemoveAt(i);
+        public void removeItemById(int id) {
+            for (int i = 0; i < shelf.Count; i++) {
+                if (shelf[i].getId() == id) {
+                    shelf.RemoveAt(i);
                 }
             }
         }
 
-        public void AddDVD(DVD dvd) {
-            dvdShelf.Add(dvd);
-        }
-
-        public void removeDVDById(int id) {
-            for (int i = 0; i < dvdShelf.Count; i++) {
-                if (dvdShelf[i].getId() == id) {
-                    dvdShelf.RemoveAt(i);
-                }
-            }
-        }
-
-        public void DisplayBooks() {
-            foreach (var book in bookShelf) {
-                book.DisplayInfo();
-            }
-        }
-
-        public void DisplayDVDs() {
-            foreach (var dvd in dvdShelf) {
-                dvd.DisplayInfo();
+        public void DisplayItems() {
+            foreach (var item in shelf) {
+                item.DisplayInfo();
             }
         }
     }
