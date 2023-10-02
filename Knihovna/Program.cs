@@ -23,11 +23,10 @@ public class Program {
         DVDStore.AddItem(dvd2);
         DVDStore.AddItem(dvd3);
 
-        BookStore.removeItemById(3);
-        DVDStore.removeItemById(1);
+        BookStore.CheckoutItem(3);
+        DVDStore.CheckoutItem(1);
 
         BookStore.DisplayItems();
         DVDStore.DisplayItems();
-
     }
 }
