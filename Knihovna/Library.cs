@@ -1,4 +1,5 @@
 ﻿using System;
+using LibraryApp.Exeptions;
 
 namespace LibraryApp {
 
@@ -56,13 +57,40 @@ namespace LibraryApp {
         }
 
         public void CheckoutItem (int id) {
-            for (int i = 0; i < shelf.Count; i++) {
-                if (shelf[i].getId() == id) {
-                    if (shelf[i].isAvailable == true) {
-                        shelf[i].isAvailable = false;
-                        Console.WriteLine($"I have borrowed: {shelf[i].Title}");
-                    }
-                 }
+            
+            T ItemToCheckout = shelf.Find(item => item.getId() == id);
+
+            if (ItemToCheckout != null) {
+
+                if (ItemToCheckout.isAvailable) {
+                ItemToCheckout.isAvailable = false;
+                Console.WriteLine($"I have borrowed: {ItemToCheckout.Title}");
+                }
+                else {
+                    throw new NotAvailableException($"{ItemToCheckout.Title} is not available");
+                }
+            }
+            else {  
+                throw new NotFoundException();
+            }
+        }
+
+        public void ReturnItem (int id) {
+            
+            T ItemToReturn = shelf.Find(item => item.getId() == id);
+
+            if (ItemToReturn != null) {
+
+                if (ItemToReturn.isAvailable == false) {
+                ItemToReturn.isAvailable = true;
+                Console.WriteLine($"I have returned: {ItemToReturn.Title}");
+                }
+                else {
+                    throw new NotAvailableException($"{ItemToReturn.Title} is already available");
+                }
+            }
+            else {  
+                throw new NotFoundException();
             }
         }
 

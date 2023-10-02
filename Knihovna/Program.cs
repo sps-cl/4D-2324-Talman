@@ -23,9 +23,13 @@ public class Program {
         DVDStore.AddItem(dvd2);
         DVDStore.AddItem(dvd3);
 
-        BookStore.CheckoutItem(3);
-        DVDStore.CheckoutItem(1);
-
+        try {
+            BookStore.CheckoutItem(2);
+            DVDStore.ReturnItem(1);
+        }
+        catch (Exception ex) {
+            Console.WriteLine(ex.Message);
+        }
         BookStore.DisplayItems();
         DVDStore.DisplayItems();
     }
