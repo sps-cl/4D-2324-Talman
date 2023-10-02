@@ -1,0 +1,10 @@
+using System;
+
+namespace EventApp.Exeptions {
+
+    public class EventNotFoundException : Exception {
+        public EventNotFoundException(message = "Event not found") : base(message) {
+        }
+    }
+
+}

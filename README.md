@@ -6,4 +6,7 @@ Jakub "Blodyx" Talman
     - git add *thing to add*
     - git commit -m "Commit message"
     - git push
-    
+
+
+# Jak vytvořit nový program?
+    - dotnet new console

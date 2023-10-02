@@ -1,0 +1,10 @@
+using System;
+
+namespace EventApp.Exeptions {
+
+    public class InvitationNotFoundException : Exception {
+        public InvitationNotFoundException(message = "Invitation not found") : base(message) {
+        }
+    }
+
+}
