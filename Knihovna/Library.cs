@@ -11,7 +11,7 @@ namespace LibraryApp {
         public LibraryItem(int id, string Title) {
             this.id = id;
             this.Title = Title;
-            this.isAvailable = isAvailable;
+            this.isAvailable = true;
         }
 
         public int getId() {
@@ -55,17 +55,22 @@ namespace LibraryApp {
             shelf.Add(item);
         }
 
-        public void removeItemById(int id) {
+        public void CheckoutItem (int id) {
             for (int i = 0; i < shelf.Count; i++) {
                 if (shelf[i].getId() == id) {
-                    shelf.RemoveAt(i);
-                }
+                    if (shelf[i].isAvailable == true) {
+                        shelf[i].isAvailable = false;
+                        Console.WriteLine($"I have borrowed: {shelf[i].Title}");
+                    }
+                 }
             }
         }
 
         public void DisplayItems() {
-            foreach (var item in shelf) {
-                item.DisplayInfo();
+            foreach (T item in shelf) {
+                if (item.isAvailable == true) {
+                    item.DisplayInfo();
+                }
             }
         }
     }
