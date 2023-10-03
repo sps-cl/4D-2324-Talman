@@ -1,59 +1,77 @@
 using System;
+using EventApp.Exceptions;
 
 namespace EventApp {
 
-    internal abstract class Atendee <T> {
 
-        public string name;
-        public int age;
-        public string gender;
-        public Invitation invitation;
+    internal abstract class Event<T> {
 
-        public Atendee(string name, int age, string gender) {
-            this.name = name;
-            this.age = age;
-            this.gender = gender;
-        }
-
-        private bool AcceptInvitation (bool accept) {
-            if (invitation != null) {
-
-            }
-        }
-
-    }
-
-
-    public class Invitation {
-
-        public Event toEvent; 
-        public bool accepted;
-
-        public Invitation(Event toEvent) {
-            this.toEvent = toEvent;
-        }
-
-    }
-
-
-    internal abstract class Event {
-
-        public enum EventType {
-            Wedding, Concert, GarageSale
-        };
-
-        public EventType eventType;
         public string name;
         public string description;
 
-        public Event (EventType type, string name, string description) {
-            this.type = type;
-            this.name = name;
-            this.description = description;
-        }
+        List<Guest> guestList = new List<Guest>();
 
     }
 
 
+    internal abstract class Atendee<T> {
+
+        public string name;
+        public string surname;
+        public int age;
+
+        public Atendee(string name, string surname, int age) {
+
+            this.name = name;
+            this.surname = surname;
+            this.age = age;
+
+        }
+
+    }
+
+    internal class Guest : Atendee<Guest> {
+
+        public enum invitaionStatus {
+
+            Denied, Pending, Accepted
+
+        }
+
+        public bool hasInvitation = false;
+        public invitaionStatus acceptedInvitation = invitaionStatus.Pending;
+
+        public Guest (string name, string surname, int age) : base(name, surname, age) {
+
+        }
+        public void processInvitation(bool accepted) {
+
+            if (hasInvitation) {
+
+                if (accepted) {
+
+                    acceptedInvitation = invitaionStatus.Accepted;
+
+                }
+                else {
+
+                    acceptedInvitation = invitaionStatus.Denied;
+
+                }
+
+            }
+            else {
+
+                throw new InvitationNotFoundException();
+
+            }
+
+        }
+
+    }
+
+    internal class Performer : Atendee {
+        
+    }
 
 }

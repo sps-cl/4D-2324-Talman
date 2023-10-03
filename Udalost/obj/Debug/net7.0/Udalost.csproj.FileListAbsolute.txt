@@ -1,0 +1,15 @@
+E:\Github\4D-prg-2324-Talman\Udalost\obj\Debug\net7.0\Udalost.csproj.AssemblyReference.cache
+E:\Github\4D-prg-2324-Talman\Udalost\obj\Debug\net7.0\Udalost.GeneratedMSBuildEditorConfig.editorconfig
+E:\Github\4D-prg-2324-Talman\Udalost\obj\Debug\net7.0\Udalost.AssemblyInfoInputs.cache
+E:\Github\4D-prg-2324-Talman\Udalost\obj\Debug\net7.0\Udalost.AssemblyInfo.cs
+E:\Github\4D-prg-2324-Talman\Udalost\obj\Debug\net7.0\Udalost.csproj.CoreCompileInputs.cache
+E:\Github\4D-prg-2324-Talman\Udalost\bin\Debug\net7.0\Udalost.exe
+E:\Github\4D-prg-2324-Talman\Udalost\bin\Debug\net7.0\Udalost.deps.json
+E:\Github\4D-prg-2324-Talman\Udalost\bin\Debug\net7.0\Udalost.runtimeconfig.json
+E:\Github\4D-prg-2324-Talman\Udalost\bin\Debug\net7.0\Udalost.dll
+E:\Github\4D-prg-2324-Talman\Udalost\bin\Debug\net7.0\Udalost.pdb
+E:\Github\4D-prg-2324-Talman\Udalost\obj\Debug\net7.0\Udalost.dll
+E:\Github\4D-prg-2324-Talman\Udalost\obj\Debug\net7.0\refint\Udalost.dll
+E:\Github\4D-prg-2324-Talman\Udalost\obj\Debug\net7.0\Udalost.pdb
+E:\Github\4D-prg-2324-Talman\Udalost\obj\Debug\net7.0\Udalost.genruntimeconfig.cache
+E:\Github\4D-prg-2324-Talman\Udalost\obj\Debug\net7.0\ref\Udalost.dll
