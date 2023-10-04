@@ -1,0 +1,43 @@
+using System;
+using EventApp.Exceptions;
+using EventApp.Models;
+
+namespace EventApp.Models {
+
+    internal class Guest : Atendee<Guest> {
+
+        public enum InvitationStatus {
+            Denied, Pending, Accepted, None
+        }
+
+        public bool hasInvitation = false;
+        public InvitationStatus invitationStatus = InvitationStatus.None;
+
+        public Guest (string name, string surname, int age) : base(name, surname, age) {
+        }
+
+        public void processInvitation(bool accepted) {
+
+            if (hasInvitation) {
+
+                if (accepted) {
+                    invitationStatus = InvitationStatus.Accepted;
+                }
+                else {
+                    invitationStatus = InvitationStatus.Denied;
+                }
+
+            }
+            else {
+                throw new InvitationNotFoundException();
+            }
+
+        }
+
+        public override void DisplayInfo() {
+            Console.WriteLine($"Name: {name}, Surname: {surname}, Age: {age}, InvStatus: {invitationStatus}");
+        }
+
+    }
+
+}
