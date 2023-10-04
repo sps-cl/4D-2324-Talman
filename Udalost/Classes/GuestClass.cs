@@ -10,7 +10,6 @@ namespace EventApp.Models {
             Denied, Pending, Accepted, None
         }
 
-        public bool hasInvitation = false;
         public InvitationStatus invitationStatus = InvitationStatus.None;
 
         public Guest (string name, string surname, int age) : base(name, surname, age) {
@@ -18,7 +17,7 @@ namespace EventApp.Models {
 
         public void processInvitation(bool accepted) {
 
-            if (hasInvitation) {
+            if (invitationStatus != InvitationStatus.None) {
 
                 if (accepted) {
                     invitationStatus = InvitationStatus.Accepted;

@@ -5,7 +5,7 @@ using EventApp.Exceptions;
 namespace EventApp {
 
 
-    internal class Event <T> {
+    internal class Event {
 
         public string name;
         public string description;
@@ -18,7 +18,7 @@ namespace EventApp {
             this.description = description;
         }
 
-        public void AddAtendee (Atendee<T> atendee) {
+        public void AddAtendee<T> (T atendee) {
 
             switch (atendee) {
 
@@ -55,14 +55,14 @@ namespace EventApp {
 
                 try {
 
-                    Performer person = performerList.Find(person => person.name == name && person.surname == surname)!;
+                    Guest person = guestList.Find(person => person.name == name && person.surname == surname)!;
 
                     if (person != null) {
-                        performerList.Remove(person);
+                        guestList.Remove(person);
                     }
                 }
                 catch (ArgumentNullException) {
-                    throw new IncorrectGivenNameException();
+                    throw new AtendeeNotFoundException();
                 }
 
             }
