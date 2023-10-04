@@ -1,6 +1,5 @@
 using System;
 using EventApp.Exceptions;
-using EventApp.Models;
 
 namespace EventApp.Models {
 

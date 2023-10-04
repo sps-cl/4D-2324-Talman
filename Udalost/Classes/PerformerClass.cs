@@ -1,5 +1,4 @@
 using System;
-using EventApp.Models;
 
 namespace EventApp.Models {
 

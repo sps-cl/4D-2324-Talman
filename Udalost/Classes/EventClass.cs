@@ -4,7 +4,6 @@ using EventApp.Exceptions;
 
 namespace EventApp {
 
-
     internal class Event {
 
         public string name;
@@ -18,7 +17,7 @@ namespace EventApp {
             this.description = description;
         }
 
-        public void AddAtendee<T> (T atendee) {
+        public void AddAtendee<T> (Atendee<T> atendee) {
 
             switch (atendee) {
 
